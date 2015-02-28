@@ -26,6 +26,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    
+    [self connectBestBuyAPI];
+}
+
 /*
 #pragma mark - Navigation
 
@@ -81,16 +86,18 @@
     NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
     
-    productsArray = [[NSMutableArray alloc] init];
-    productsArray = [json objectForKey:@"products"];
-    
     storesArray = [[NSMutableArray alloc] init];
+    storesArray = [json objectForKey:@"stores"];
     
-    for (NSDictionary *product in productsArray) {
-        NSURL *url = [NSURL URLWithString:[product objectForKey:@"image"]];
-        
-        
+    if ([storesArray count] > 0) {
+        store = [[NSMutableDictionary alloc] init];
+        store = [storesArray objectAtIndex:0];
+        NSLog(@"FOUND IT");
+    } else {
+        NSLog(@"NOOOOO!!!");
     }
+    
+    
     
     
     

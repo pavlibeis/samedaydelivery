@@ -15,7 +15,7 @@
     NSURLConnection *urlConnection;
     NSString *theResponse;
     
-    //airport related arrays
+    //products related arrays
     NSMutableArray *productsArray;
     NSMutableArray *imagesArray;
 }

@@ -15,9 +15,9 @@
     NSURLConnection *urlConnection;
     NSString *theResponse;
     
-    //airport related arrays
-    NSMutableArray *productsArray;
+    //stores related arrays
     NSMutableArray *storesArray;
+    NSMutableDictionary *store;
 }
 
 

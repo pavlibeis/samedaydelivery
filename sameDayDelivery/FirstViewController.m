@@ -173,7 +173,6 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    NSLog(@"LOCO");
     ProductViewController *pvc = [self.storyboard instantiateViewControllerWithIdentifier:@"product"];
     pvc.product = [productsArray objectAtIndex:indexPath.row];
     [self.navigationController pushViewController:pvc animated:YES];
