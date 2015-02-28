@@ -14,7 +14,7 @@
 
 @implementation ProductViewController
 
-@synthesize product;
+@synthesize product, productNameLabel, productPriceLabel, productDescriptionTextView, productImageView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -93,6 +93,13 @@
         store = [[NSMutableDictionary alloc] init];
         store = [storesArray objectAtIndex:0];
         NSLog(@"FOUND IT");
+        productNameLabel.text = [product objectForKey:@"name"];
+        productDescriptionTextView.text = [product objectForKey:@"shortDescription"];
+        productPriceLabel.text = [NSString stringWithFormat:@"Price: $%@",[product objectForKey:@"salePrice"]];
+        NSURL *url = [NSURL URLWithString:[product objectForKey:@"image"]];
+        UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:url]];
+        [productImageView setImage:image];
+        
     } else {
         NSLog(@"NOOOOO!!!");
     }

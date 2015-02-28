@@ -23,4 +23,9 @@
 
 @property (nonatomic, strong) NSDictionary *product;
 
+@property (nonatomic, strong) IBOutlet UILabel *productNameLabel;
+@property (nonatomic, strong) IBOutlet UILabel *productPriceLabel;
+@property (nonatomic, strong) IBOutlet UITextView *productDescriptionTextView;
+@property (nonatomic, strong) IBOutlet UIImageView *productImageView;
+
 @end

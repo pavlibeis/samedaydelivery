@@ -10,6 +10,7 @@
 		45F0F6311AA19D3E00073DF9 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0F6301AA19D3E00073DF9 /* ThirdViewController.m */; };
 		45F0F6341AA1AF3F00073DF9 /* ProductsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0F6331AA1AF3F00073DF9 /* ProductsTableViewCell.m */; };
 		45F0F6371AA1B9CC00073DF9 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0F6361AA1B9CC00073DF9 /* ProductViewController.m */; };
+		45F0F63A1AA2542100073DF9 /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0F6391AA2542100073DF9 /* PayViewController.m */; };
 		CAB4E2311AA1968B00E10C55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB4E2301AA1968B00E10C55 /* main.m */; };
 		CAB4E2341AA1968B00E10C55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB4E2331AA1968B00E10C55 /* AppDelegate.m */; };
 		CAB4E2371AA1968B00E10C55 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB4E2361AA1968B00E10C55 /* FirstViewController.m */; };
@@ -54,6 +55,8 @@
 		45F0F6331AA1AF3F00073DF9 /* ProductsTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductsTableViewCell.m; sourceTree = "<group>"; };
 		45F0F6351AA1B9CC00073DF9 /* ProductViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductViewController.h; sourceTree = "<group>"; };
 		45F0F6361AA1B9CC00073DF9 /* ProductViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProductViewController.m; sourceTree = "<group>"; };
+		45F0F6381AA2542100073DF9 /* PayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PayViewController.h; sourceTree = "<group>"; };
+		45F0F6391AA2542100073DF9 /* PayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
 		CAB4E22B1AA1968B00E10C55 /* sameDayDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sameDayDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB4E22F1AA1968B00E10C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAB4E2301AA1968B00E10C55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -170,6 +173,8 @@
 				45F0F6331AA1AF3F00073DF9 /* ProductsTableViewCell.m */,
 				45F0F6351AA1B9CC00073DF9 /* ProductViewController.h */,
 				45F0F6361AA1B9CC00073DF9 /* ProductViewController.m */,
+				45F0F6381AA2542100073DF9 /* PayViewController.h */,
+				45F0F6391AA2542100073DF9 /* PayViewController.m */,
 				CAB4E2381AA1968B00E10C55 /* SecondViewController.h */,
 				CAB4E2391AA1968B00E10C55 /* SecondViewController.m */,
 				45F0F62F1AA19D3E00073DF9 /* ThirdViewController.h */,
@@ -310,6 +315,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAB4E23A1AA1968B00E10C55 /* SecondViewController.m in Sources */,
+				45F0F63A1AA2542100073DF9 /* PayViewController.m in Sources */,
 				45F0F6311AA19D3E00073DF9 /* ThirdViewController.m in Sources */,
 				CAB4E27A1AA1B2A300E10C55 /* ModalViewController.m in Sources */,
 				CAB4E2341AA1968B00E10C55 /* AppDelegate.m in Sources */,
