@@ -8,7 +8,18 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ProductViewController : UIViewController
+@interface ProductViewController : UIViewController <NSURLConnectionDelegate> {
+    
+    // HTTP Request Related Local Variables
+    NSMutableData *receivedData;
+    NSURLConnection *urlConnection;
+    NSString *theResponse;
+    
+    //airport related arrays
+    NSMutableArray *productsArray;
+    NSMutableArray *storesArray;
+}
+
 
 @property (nonatomic, strong) NSDictionary *product;
 
