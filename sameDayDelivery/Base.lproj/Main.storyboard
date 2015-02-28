@@ -151,6 +151,24 @@
             </objects>
             <point key="canvasLocation" x="2292" y="-1109"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="rsD-Zs-Vsu">
+            <objects>
+                <viewController id="65d-RO-70u" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ps8-N1-qUB"/>
+                        <viewControllerLayoutGuide type="bottom" id="miN-7y-nkc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a5P-11-neQ">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xqu-xS-dTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1480" y="-525"/>
+        </scene>
         <!--Pay View Controller-->
         <scene sceneID="jZD-fX-ooU">
             <objects>
@@ -298,6 +316,12 @@
                                     <action selector="select:" destination="KDl-Y8-T2x" eventType="valueChanged" id="Acs-MA-87a"/>
                                 </connections>
                             </segmentedControl>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="R2b-hk-GiH">
+                                <rect key="frame" x="180" y="180" width="240" height="240"/>
+                                <connections>
+                                    <outlet property="delegate" destination="KDl-Y8-T2x" id="BFx-07-hrp"/>
+                                </connections>
+                            </mapView>
                             <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6Zs-Hg-hhh">
                                 <rect key="frame" x="0.0" y="189" width="600" height="222"/>
                                 <subviews>
@@ -349,9 +373,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="6Zs-Hg-hhh" firstAttribute="height" secondItem="R2b-hk-GiH" secondAttribute="height" id="04T-TB-RLY"/>
+                            <constraint firstItem="6Zs-Hg-hhh" firstAttribute="top" secondItem="R2b-hk-GiH" secondAttribute="top" id="0il-qK-kSW"/>
                             <constraint firstAttribute="centerX" secondItem="pFE-8u-qp9" secondAttribute="centerX" id="6A8-h1-SIW"/>
                             <constraint firstItem="6Zs-Hg-hhh" firstAttribute="leading" secondItem="twy-18-brn" secondAttribute="leading" id="QS5-FF-2bn"/>
+                            <constraint firstAttribute="centerX" secondItem="R2b-hk-GiH" secondAttribute="centerX" id="SlS-7a-I0x"/>
                             <constraint firstAttribute="trailing" secondItem="6Zs-Hg-hhh" secondAttribute="trailing" id="eAP-l9-fD9"/>
+                            <constraint firstItem="6Zs-Hg-hhh" firstAttribute="top" secondItem="R2b-hk-GiH" secondAttribute="top" id="eT3-6F-tDV"/>
                             <constraint firstItem="sz7-ht-iMq" firstAttribute="top" secondItem="6Zs-Hg-hhh" secondAttribute="bottom" constant="20" id="iO8-WF-ylC"/>
                             <constraint firstItem="6Zs-Hg-hhh" firstAttribute="top" secondItem="pFE-8u-qp9" secondAttribute="bottom" constant="30" id="mCS-Qm-iRR"/>
                             <constraint firstAttribute="centerX" secondItem="sz7-ht-iMq" secondAttribute="centerX" id="wMY-5f-2m7"/>
@@ -360,6 +388,7 @@
                     <tabBarItem key="tabBarItem" title="Item" id="9LM-8z-1ao"/>
                     <connections>
                         <outlet property="addressContainerView" destination="6Zs-Hg-hhh" id="ccv-yd-Xp9"/>
+                        <outlet property="mapView" destination="R2b-hk-GiH" id="1cA-M5-OM1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9vp-UW-Q8o" userLabel="First Responder" sceneMemberID="firstResponder"/>

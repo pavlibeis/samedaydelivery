@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45B652C71AA27ACE00C94292 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B652C61AA27ACE00C94292 /* MapKit.framework */; };
 		45F0F6311AA19D3E00073DF9 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0F6301AA19D3E00073DF9 /* ThirdViewController.m */; };
 		45F0F6341AA1AF3F00073DF9 /* ProductsTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0F6331AA1AF3F00073DF9 /* ProductsTableViewCell.m */; };
 		45F0F6371AA1B9CC00073DF9 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0F6361AA1B9CC00073DF9 /* ProductViewController.m */; };
@@ -50,6 +51,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45B652C61AA27ACE00C94292 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		45F0F62F1AA19D3E00073DF9 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
 		45F0F6301AA19D3E00073DF9 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		45F0F6321AA1AF3F00073DF9 /* ProductsTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProductsTableViewCell.h; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45B652C71AA27ACE00C94292 /* MapKit.framework in Frameworks */,
 				CAB4E2761AA1A21E00E10C55 /* libsqlite3.dylib in Frameworks */,
 				CAB4E2741AA1A21200E10C55 /* libz.dylib in Frameworks */,
 				CAB4E2721AA1A20D00E10C55 /* SystemConfiguration.framework in Frameworks */,
@@ -147,6 +150,7 @@
 		CAB4E2221AA1968B00E10C55 = {
 			isa = PBXGroup;
 			children = (
+				45B652C61AA27ACE00C94292 /* MapKit.framework */,
 				CAB4E2751AA1A21E00E10C55 /* libsqlite3.dylib */,
 				CAB4E2731AA1A21200E10C55 /* libz.dylib */,
 				CAB4E2711AA1A20D00E10C55 /* SystemConfiguration.framework */,
@@ -275,10 +279,11 @@
 				TargetAttributes = {
 					CAB4E22A1AA1968B00E10C55 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = 894JHBB748;
+						DevelopmentTeam = ZRG2J3VTE5;
 					};
 					CAB4E2461AA1968C00E10C55 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = ZRG2J3VTE5;
 						TestTargetID = CAB4E22A1AA1968B00E10C55;
 					};
 				};
