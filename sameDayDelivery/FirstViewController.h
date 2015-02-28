@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController <NSURLConnectionDelegate> {
+@interface FirstViewController : UIViewController <NSURLConnectionDelegate, UITableViewDataSource, UITabBarDelegate> {
     
     // HTTP Request Related Local Variables
     NSMutableData *receivedData;
@@ -17,10 +17,11 @@
     
     //airport related arrays
     NSMutableArray *productsArray;
+    NSMutableArray *imagesArray;
 }
 
 
-@property (nonatomic, strong) IBOutlet UITableView *tableView;
+@property (nonatomic, strong) IBOutlet UITableView *theTableView;
 
 @end
 

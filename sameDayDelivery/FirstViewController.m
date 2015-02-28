@@ -7,12 +7,16 @@
 //
 
 #import "FirstViewController.h"
+#import "ProductsTableViewCell.h"
+#import "ProductViewController.h"
 
 @interface FirstViewController ()
 
 @end
 
 @implementation FirstViewController
+
+@synthesize theTableView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -66,34 +70,33 @@
     NSString *jsonString = [theResponse stringByReplacingOccurrencesOfString:@"JSON_CALLBACK(" withString:@""];
     jsonString = [jsonString substringToIndex:[jsonString length] - 1];
     
-    NSLog(@"theResponse:%@",jsonString);
+    //NSLog(@"theResponse:%@",jsonString);
     
     NSError *error;
     
     NSData *jsonData = [jsonString dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *json = [NSJSONSerialization JSONObjectWithData:jsonData options:0 error:&error];
     
-    for (NSString *key in [json allKeys]) {
-        NSLog(@"Key:%@",key);
-    }
-    
-    
     productsArray = [[NSMutableArray alloc] init];
+    productsArray = [json objectForKey:@"products"];
     
-    for (NSDictionary *product in [json objectForKey:@"products"]) {
+    imagesArray = [[NSMutableArray alloc] init];
+    
+    for (NSDictionary *product in productsArray) {
+        NSURL *url = [NSURL URLWithString:[product objectForKey:@"image"]];
         
-        NSString *sku = [product objectForKey:@"sku"];
-        
-        NSLog(@"SKU:%@",sku);
-        /*
-        if (classifications < 5 && active) {
-            [productsArray addObject:airport];
-        }
-         */
-        
+        dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
+        dispatch_async(queue, ^{
+            NSData *data = [NSData dataWithContentsOfURL:url];
+            UIImage *img = [[UIImage alloc] initWithData:data];
+            dispatch_async(dispatch_get_main_queue(), ^{
+                [imagesArray addObject:[[UIImageView alloc] initWithImage:img]];
+                [theTableView reloadData];
+            });
+        });
     }
     
-    [self.tableView reloadData];
+    [self.theTableView reloadData];
     
 }
 
@@ -125,6 +128,56 @@
      and create a new PFObject with the password and singly user id then it will log the PFObject id in the
      users default with the singly user as a key, then it registers the user to ejabberd
      */
+    
+}
+
+#pragma mark - Table view data source & delegate
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    // Return the number of sections.
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    // Return the number of rows in the section.
+    return [productsArray count];
+}
+
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    ProductsTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    // Configure the cell...
+    
+    cell.productNameLabel.text = [[productsArray objectAtIndex:indexPath.row] objectForKey:@"name"];
+    cell.productPriceLabel.text = [NSString stringWithFormat:@"Price: $%@",[[productsArray objectAtIndex:indexPath.row] objectForKey:@"salePrice"]];
+    
+    NSURL *url = [NSURL URLWithString:[[productsArray objectAtIndex:indexPath.row] objectForKey:@"image"]];
+    
+    if (url) {
+            dispatch_queue_t queue = dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_HIGH, 0ul);
+            dispatch_async(queue, ^{
+                UIImage *image = [UIImage imageWithData:[NSData dataWithContentsOfURL:url]];
+                dispatch_sync(dispatch_get_main_queue(), ^{
+                    [[cell imageView] setImage:image];
+                    [cell setNeedsLayout];
+                });
+            });
+    }
+
+    
+    return cell;
+}
+
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    NSLog(@"LOCO");
+    ProductViewController *pvc = [self.storyboard instantiateViewControllerWithIdentifier:@"product"];
+    pvc.product = [productsArray objectAtIndex:indexPath.row];
+    [self.navigationController pushViewController:pvc animated:YES];
+
     
 }
 
