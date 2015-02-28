@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		45F0F6311AA19D3E00073DF9 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0F6301AA19D3E00073DF9 /* ThirdViewController.m */; };
 		CAB4E2311AA1968B00E10C55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB4E2301AA1968B00E10C55 /* main.m */; };
 		CAB4E2341AA1968B00E10C55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB4E2331AA1968B00E10C55 /* AppDelegate.m */; };
 		CAB4E2371AA1968B00E10C55 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB4E2361AA1968B00E10C55 /* FirstViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		45F0F62F1AA19D3E00073DF9 /* ThirdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdViewController.h; sourceTree = "<group>"; };
+		45F0F6301AA19D3E00073DF9 /* ThirdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdViewController.m; sourceTree = "<group>"; };
 		CAB4E22B1AA1968B00E10C55 /* sameDayDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sameDayDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB4E22F1AA1968B00E10C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAB4E2301AA1968B00E10C55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 				CAB4E2361AA1968B00E10C55 /* FirstViewController.m */,
 				CAB4E2381AA1968B00E10C55 /* SecondViewController.h */,
 				CAB4E2391AA1968B00E10C55 /* SecondViewController.m */,
+				45F0F62F1AA19D3E00073DF9 /* ThirdViewController.h */,
+				45F0F6301AA19D3E00073DF9 /* ThirdViewController.m */,
 				CAB4E23B1AA1968B00E10C55 /* Main.storyboard */,
 				CAB4E23E1AA1968C00E10C55 /* Images.xcassets */,
 				CAB4E2401AA1968C00E10C55 /* LaunchScreen.xib */,
@@ -225,6 +230,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAB4E23A1AA1968B00E10C55 /* SecondViewController.m in Sources */,
+				45F0F6311AA19D3E00073DF9 /* ThirdViewController.m in Sources */,
 				CAB4E2341AA1968B00E10C55 /* AppDelegate.m in Sources */,
 				CAB4E2371AA1968B00E10C55 /* FirstViewController.m in Sources */,
 				CAB4E2311AA1968B00E10C55 /* main.m in Sources */,
@@ -418,6 +424,7 @@
 				CAB4E2531AA1968C00E10C55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CAB4E2541AA1968C00E10C55 /* Build configuration list for PBXNativeTarget "sameDayDeliveryTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +433,7 @@
 				CAB4E2561AA1968C00E10C55 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

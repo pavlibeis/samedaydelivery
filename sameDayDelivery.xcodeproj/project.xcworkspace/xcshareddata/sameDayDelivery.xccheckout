@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>63FD1A42-21EC-4C21-9F7B-E1D7425C575B</string>
+	<key>IDESourceControlProjectName</key>
+	<string>sameDayDelivery</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>BC8C1779E04706EE87FAA78BA2DF8F89CE97C9C0</key>
+		<string>https://github.com/pavlibeis/samedaydelivery.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>sameDayDelivery.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>BC8C1779E04706EE87FAA78BA2DF8F89CE97C9C0</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/pavlibeis/samedaydelivery.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>BC8C1779E04706EE87FAA78BA2DF8F89CE97C9C0</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>BC8C1779E04706EE87FAA78BA2DF8F89CE97C9C0</string>
+			<key>IDESourceControlWCCName</key>
+			<string>samedaydelivery</string>
+		</dict>
+	</array>
+</dict>
+</plist>
