@@ -8,8 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface FirstViewController : UIViewController
+@interface FirstViewController : UIViewController <NSURLConnectionDelegate> {
+    
+    // HTTP Request Related Local Variables
+    NSMutableData *receivedData;
+    NSURLConnection *urlConnection;
+    NSString *theResponse;
+    
+    //airport related arrays
+    NSMutableArray *productsArray;
+}
 
+
+@property (nonatomic, strong) IBOutlet UITableView *tableView;
 
 @end
 
