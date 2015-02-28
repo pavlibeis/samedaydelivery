@@ -48,20 +48,16 @@
         <scene sceneID="DUF-Hy-DZP">
             <objects>
                 <viewController id="n3M-9d-Rks" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="k8e-RP-gA5"/>
-                        <viewControllerLayoutGuide type="bottom" id="fAO-0u-kYf"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="aiG-7C-JsV">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="rjV-zY-mtX">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
+                    </tableView>
                     <tabBarItem key="tabBarItem" title="Item" id="2tC-sT-KIS"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3G-Xg-tEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="742" y="1119"/>
+            <point key="canvasLocation" x="750" y="1293"/>
         </scene>
         <!--Second-->
         <scene sceneID="wg7-f3-ORb">

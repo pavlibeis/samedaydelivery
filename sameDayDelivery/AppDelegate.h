@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ModalViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (nonatomic, retain)  ModalViewController *aModalViewController;
 
 
 @end

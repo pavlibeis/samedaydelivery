@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import <Parse/Parse.h>
+#import "FirstViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,8 +17,47 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    [Parse enableLocalDatastore];
+    
+    // Initialize Parse.
+    [Parse setApplicationId:@"ghJmCtSjTCYdsihfeZGtWTdaqMXmF5TJS1Uu629V"
+                  clientKey:@"uXGyXFhfWsA2OHtwJ0p2GH75Jwu4tgKygh7NzOl8"];
+    
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
+    UIUserNotificationType userNotificationTypes = (UIUserNotificationTypeAlert |
+                                                    UIUserNotificationTypeBadge |
+                                                    UIUserNotificationTypeSound);
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:userNotificationTypes
+                                                                             categories:nil];
+    [application registerUserNotificationSettings:settings];
+    [application registerForRemoteNotifications];
+    // When users indicate they are Giants fans, we subscribe them to that channel.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation addUniqueObject:@"Giants" forKey:@"channels"];
+    [currentInstallation saveInBackground];
+
+//    self.window.rootViewController = aModalViewController;
+//    [self presentModalViewController:aModalViewController animated:YES];
+
+
+
     return YES;
+}
+
+- (void)application:(UIApplication *)application
+didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // Store the deviceToken in the current Installation and save it to Parse.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation setDeviceTokenFromData:deviceToken];
+    [currentInstallation saveInBackground];
+}
+
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
+//    [PFPush handlePush:userInfo];
+    
+
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
