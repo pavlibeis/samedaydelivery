@@ -104,7 +104,7 @@
         <!--Item-->
         <scene sceneID="DUF-Hy-DZP">
             <objects>
-                <viewController id="n3M-9d-Rks" sceneMemberID="viewController">
+                <viewController id="n3M-9d-Rks" customClass="ThirdViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lRP-BX-RUQ"/>
                         <viewControllerLayoutGuide type="bottom" id="hkg-j1-GgZ"/>
@@ -122,6 +122,9 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="checkButton:" destination="n3M-9d-Rks" eventType="touchUpInside" id="nos-Bg-twR"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -131,6 +134,35 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3G-Xg-tEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="750" y="1293"/>
+        </scene>
+        <!--Modal View Controller-->
+        <scene sceneID="iQl-IN-ojQ">
+            <objects>
+                <viewController storyboardIdentifier="modal" id="mRm-iS-FaV" customClass="ModalViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vwo-t3-fh4"/>
+                        <viewControllerLayoutGuide type="bottom" id="X5V-pd-HO2"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="uPx-6D-2qS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsG-1F-uZB">
+                                <rect key="frame" x="245" y="175" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="closeModal:" destination="mRm-iS-FaV" eventType="touchUpInside" id="5hd-ru-uLe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mK7-Rg-Xm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1509" y="1308"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="xzP-rl-LAG">

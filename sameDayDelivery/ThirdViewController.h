@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "ModalViewController.h"
 @interface ThirdViewController : UIViewController
 
 @end

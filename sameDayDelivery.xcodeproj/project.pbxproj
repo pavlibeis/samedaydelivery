@@ -35,7 +35,6 @@
 		CAB4E2741AA1A21200E10C55 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB4E2731AA1A21200E10C55 /* libz.dylib */; };
 		CAB4E2761AA1A21E00E10C55 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = CAB4E2751AA1A21E00E10C55 /* libsqlite3.dylib */; };
 		CAB4E27A1AA1B2A300E10C55 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB4E2781AA1B2A300E10C55 /* ModalViewController.m */; };
-		CAB4E27B1AA1B2A300E10C55 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAB4E2791AA1B2A300E10C55 /* ModalViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,7 +87,6 @@
 		CAB4E2751AA1A21E00E10C55 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		CAB4E2771AA1B2A300E10C55 /* ModalViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
 		CAB4E2781AA1B2A300E10C55 /* ModalViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
-		CAB4E2791AA1B2A300E10C55 /* ModalViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,7 +164,6 @@
 				CAB4E2331AA1968B00E10C55 /* AppDelegate.m */,
 				CAB4E2771AA1B2A300E10C55 /* ModalViewController.h */,
 				CAB4E2781AA1B2A300E10C55 /* ModalViewController.m */,
-				CAB4E2791AA1B2A300E10C55 /* ModalViewController.xib */,
 				CAB4E2351AA1968B00E10C55 /* FirstViewController.h */,
 				CAB4E2361AA1968B00E10C55 /* FirstViewController.m */,
 				45F0F6321AA1AF3F00073DF9 /* ProductsTableViewCell.h */,
@@ -292,7 +289,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAB4E27B1AA1B2A300E10C55 /* ModalViewController.xib in Resources */,
 				CAB4E23D1AA1968B00E10C55 /* Main.storyboard in Resources */,
 				CAB4E2421AA1968C00E10C55 /* LaunchScreen.xib in Resources */,
 				CAB4E23F1AA1968C00E10C55 /* Images.xcassets in Resources */,

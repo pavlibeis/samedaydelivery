@@ -7,7 +7,7 @@
 //
 
 #import "ThirdViewController.h"
-
+#import "ModalViewController.h"
 @interface ThirdViewController ()
 
 @end
@@ -16,12 +16,25 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+
+
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)checkButton:(id)sender {
+//    ModalViewController *aModalViewController = [[ModalViewController alloc] init];
+    ModalViewController *aModalViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"modal"];
+    
+    
+    //This will be the size you want
+    
+    [self presentViewController:aModalViewController animated:YES completion:nil];
+
+//    [self presentModalViewController:aModalViewController animated:YES];
+
 }
 
 /*
