@@ -300,8 +300,8 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="richard.png" translatesAutoresizingMaskIntoConstraints="NO" id="MXe-g3-tEV">
-                                <rect key="frame" x="10" y="10" width="50" height="50"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="richard.png" translatesAutoresizingMaskIntoConstraints="NO" id="MXe-g3-tEV">
+                                <rect key="frame" x="10" y="10" width="80" height="80"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -310,7 +310,9 @@
                             <constraint firstAttribute="trailing" secondItem="83s-HG-gH8" secondAttribute="trailing" id="C7r-py-TgQ"/>
                             <constraint firstAttribute="trailing" secondItem="Ucl-zU-8wj" secondAttribute="trailing" id="IEU-52-70w"/>
                             <constraint firstItem="83s-HG-gH8" firstAttribute="leading" secondItem="O95-Ag-lXQ" secondAttribute="leading" id="LDA-a2-G0d"/>
+                            <constraint firstItem="MXe-g3-tEV" firstAttribute="leading" secondItem="O95-Ag-lXQ" secondAttribute="leading" constant="15" id="OC1-kH-7hZ"/>
                             <constraint firstAttribute="trailing" secondItem="0fl-Sa-uzb" secondAttribute="trailing" id="bSF-dD-4xf"/>
+                            <constraint firstItem="MXe-g3-tEV" firstAttribute="top" secondItem="O95-Ag-lXQ" secondAttribute="top" constant="15" id="iAc-T4-LG9"/>
                             <constraint firstItem="Ucl-zU-8wj" firstAttribute="leading" secondItem="O95-Ag-lXQ" secondAttribute="leading" id="jzX-S5-8yX"/>
                         </constraints>
                     </view>
