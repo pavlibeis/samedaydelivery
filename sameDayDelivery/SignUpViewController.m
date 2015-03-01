@@ -19,6 +19,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    self.navigationController.navigationBarHidden = YES;
+    
     // Objective-C
     TWTRLogInButton *logInButton =  [TWTRLogInButton
                                      buttonWithLogInCompletion:

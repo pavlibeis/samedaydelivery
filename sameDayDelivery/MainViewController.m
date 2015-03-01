@@ -16,6 +16,7 @@
 @implementation MainViewController
 
 @synthesize addressContainerView, mapView, gmsButton,bmsButton, addressTExtField, onTheWayLabel, getLiteButton;
+@synthesize upLabel,bottonLabel;
 
 - (IBAction)back:(id)sender {
     [self back];
@@ -29,7 +30,8 @@
     getLiteButton.enabled = NO;
     getLiteButton.hidden = NO;
     onTheWayLabel.hidden = YES;
-    
+    upLabel.hidden = NO;
+    bottonLabel.hidden = NO;
 }
 
 - (IBAction)getLite:(id)sender {

@@ -25,4 +25,8 @@
 @property (nonatomic, strong) IBOutlet UITextField *addressTExtField;
 @property (nonatomic, strong) IBOutlet UILabel *onTheWayLabel;
 
+@property (nonatomic, strong) IBOutlet UILabel *upLabel;
+@property (nonatomic, strong) IBOutlet UILabel *bottonLabel;
+
+
 @end
