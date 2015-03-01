@@ -11,7 +11,6 @@
 #import "FirstViewController.h"
 #import <Fabric/Fabric.h>
 #import <TwitterKit/TwitterKit.h>
-#import <CoreLocation/CoreLocation.h>
 @interface AppDelegate ()
 
 @end
