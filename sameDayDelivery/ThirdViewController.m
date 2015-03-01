@@ -19,7 +19,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSDictionary *receivedNotification = [[NSDictionary alloc] init];
     
     [[NSNotificationCenter defaultCenter]
      addObserver:self selector:@selector(triggerAction:) name:@"kDriverNotifRecieved" object:nil];

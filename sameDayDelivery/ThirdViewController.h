@@ -10,7 +10,7 @@
 #import "ModalViewController.h"
 #import <MapKit/MapKit.h>
 
-@interface ThirdViewController : UIViewController <MKMapViewDelegate>  {
+@interface ThirdViewController : UIViewController <MKMapViewDelegate, CLLocationManagerDelegate>  {
     
     CLLocationManager *locationManager;
 }

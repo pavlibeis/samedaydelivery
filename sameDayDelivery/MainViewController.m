@@ -17,6 +17,19 @@
 
 @synthesize addressContainerView, mapView, gmsButton,bmsButton, addressTExtField, onTheWayLabel, getLiteButton;
 
+- (IBAction)back:(id)sender {
+    [self back];
+}
+
+- (void)back {
+    
+    gmsButton.hidden = NO;
+    bmsButton.hidden = NO;
+    addressTExtField.hidden = YES;
+    getLiteButton.enabled = NO;
+    
+}
+
 - (IBAction)getLite:(id)sender {
     
     onTheWayLabel.hidden = NO;
@@ -84,6 +97,9 @@
     }
     locationManager.desiredAccuracy =  kCLLocationAccuracyThreeKilometers;
     [locationManager startUpdatingLocation];
+    
+    [[NSNotificationCenter defaultCenter]
+     addObserver:self selector:@selector(triggerAction:) name:@"kCustomerNotifRecieved" object:nil];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -100,6 +116,12 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+#pragma mark - Notification
+-(void) triggerAction:(NSNotification *) notification
+{
+    [self back];
+}
 
 #pragma mark - CLLocation Manager Delegate
 

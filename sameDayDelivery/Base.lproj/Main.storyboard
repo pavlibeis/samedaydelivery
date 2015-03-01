@@ -455,7 +455,7 @@
                                     <action selector="getMyStuff:" destination="KDl-Y8-T2x" eventType="touchUpInside" id="YXO-KW-nQD"/>
                                 </connections>
                             </button>
-                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Fort Mason, CA" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5v-t8-z5D">
+                            <textField hidden="YES" opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Fort Mason, CA 94123" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X5v-t8-z5D">
                                 <rect key="frame" x="122" y="468" width="237" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="237" id="EJI-VS-CjI"/>
