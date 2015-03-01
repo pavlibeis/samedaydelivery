@@ -301,9 +301,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		CAB4E22A1AA1968B00E10C55 /* sameDayDelivery */ = {
+		CAB4E22A1AA1968B00E10C55 /* LitePass */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = CAB4E2511AA1968C00E10C55 /* Build configuration list for PBXNativeTarget "sameDayDelivery" */;
+			buildConfigurationList = CAB4E2511AA1968C00E10C55 /* Build configuration list for PBXNativeTarget "LitePass" */;
 			buildPhases = (
 				CAB4E2271AA1968B00E10C55 /* Sources */,
 				CAB4E2281AA1968B00E10C55 /* Frameworks */,
@@ -314,7 +314,7 @@
 			);
 			dependencies = (
 			);
-			name = sameDayDelivery;
+			name = LitePass;
 			productName = sameDayDelivery;
 			productReference = CAB4E22B1AA1968B00E10C55 /* sameDayDelivery.app */;
 			productType = "com.apple.product-type.application";
@@ -370,7 +370,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				CAB4E22A1AA1968B00E10C55 /* sameDayDelivery */,
+				CAB4E22A1AA1968B00E10C55 /* LitePass */,
 				CAB4E2461AA1968C00E10C55 /* sameDayDeliveryTests */,
 			);
 		};
@@ -449,7 +449,7 @@
 /* Begin PBXTargetDependency section */
 		CAB4E2491AA1968C00E10C55 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = CAB4E22A1AA1968B00E10C55 /* sameDayDelivery */;
+			target = CAB4E22A1AA1968B00E10C55 /* LitePass */;
 			targetProxy = CAB4E2481AA1968C00E10C55 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -640,7 +640,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CAB4E2511AA1968C00E10C55 /* Build configuration list for PBXNativeTarget "sameDayDelivery" */ = {
+		CAB4E2511AA1968C00E10C55 /* Build configuration list for PBXNativeTarget "LitePass" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				CAB4E2521AA1968C00E10C55 /* Debug */,
