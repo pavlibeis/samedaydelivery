@@ -352,7 +352,9 @@
                         <color key="backgroundColor" red="0.85490196078431369" green="0.90980392156862744" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="nMT-GG-ckM" secondAttribute="centerX" id="fEP-XO-k0Y"/>
+                            <constraint firstItem="nMT-GG-ckM" firstAttribute="leading" secondItem="uPx-6D-2qS" secondAttribute="leadingMargin" constant="10" id="lDF-82-70d"/>
                             <constraint firstAttribute="centerX" secondItem="bsG-1F-uZB" secondAttribute="centerX" id="qSr-ji-ZRi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="nMT-GG-ckM" secondAttribute="trailing" constant="10" id="uYx-AJ-5zt"/>
                         </constraints>
                     </view>
                 </viewController>
