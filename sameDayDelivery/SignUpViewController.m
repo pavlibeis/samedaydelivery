@@ -39,7 +39,7 @@
                                                      // There was a problem, check error.description
                                                  }
                                              }];
-                                             if([twitterUserName isEqualToString: @"pavlibeis" ]) {
+                                             if(([twitterUserName isEqualToString: @"pavlibeis" ]) || ([twitterUserName isEqualToString: @"Grundyoso" ])) {
                                                  UIViewController * vc1 = [self.storyboard instantiateViewControllerWithIdentifier:@"ThirdViewController"];
                                                  [self presentViewController:vc1 animated:YES completion:nil];
                                              } else {
