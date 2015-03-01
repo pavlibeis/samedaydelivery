@@ -268,10 +268,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="GwN-sX-YyO">
-                                <rect key="frame" x="0.0" y="114" width="600" height="600"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </tableView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h7s-cV-yk8">
                                 <rect key="frame" x="268" y="76" width="46" height="30"/>
                                 <state key="normal" title="Button">
@@ -281,10 +277,16 @@
                                     <action selector="checkButton:" destination="n3M-9d-Rks" eventType="touchUpInside" id="nos-Bg-twR"/>
                                 </connections>
                             </button>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="83s-HG-gH8">
+                                <rect key="frame" x="0.0" y="106" width="600" height="404"/>
+                            </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="2tC-sT-KIS"/>
+                    <connections>
+                        <outlet property="mapView" destination="83s-HG-gH8" id="Q9Z-8c-3Ei"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G3G-Xg-tEe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

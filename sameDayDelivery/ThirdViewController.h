@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 #import "ModalViewController.h"
-@interface ThirdViewController : UIViewController
+#import <MapKit/MapKit.h>
+
+@interface ThirdViewController : UIViewController <MKMapViewDelegate>  {
+    
+    CLLocationManager *locationManager;
+}
+
+@property (nonatomic, strong) IBOutlet MKMapView *mapView;
+
 
 @end
