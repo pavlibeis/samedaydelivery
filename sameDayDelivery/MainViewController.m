@@ -8,6 +8,7 @@
 
 #import "MainViewController.h"
 #import "DestinationViewController.h"
+#import "PaymentsViewController.h"
 
 @interface MainViewController ()
 
@@ -109,11 +110,20 @@
     
     [[NSNotificationCenter defaultCenter]
      addObserver:self selector:@selector(triggerAction:) name:@"kCustomerNotifRecieved" object:nil];
+    
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)openConfig:(id)sender {
+    
+    PaymentsViewController *pvc = [self.storyboard instantiateViewControllerWithIdentifier:@"payment"];
+    [self.navigationController presentViewController:pvc animated:NO completion:nil];
+    
+    NSLog(@"WHAT>");
 }
 
 /*

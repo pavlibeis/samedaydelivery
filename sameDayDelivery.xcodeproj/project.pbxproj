@@ -12,6 +12,7 @@
 		45509B051AA39A1400971C99 /* lite-pass-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 45509B041AA39A1400971C99 /* lite-pass-1.png */; };
 		45509B071AA3C57500971C99 /* esther.png in Resources */ = {isa = PBXBuildFile; fileRef = 45509B061AA3C57500971C99 /* esther.png */; };
 		45509B091AA3C57E00971C99 /* richard.png in Resources */ = {isa = PBXBuildFile; fileRef = 45509B081AA3C57E00971C99 /* richard.png */; };
+		45509B0C1AA3D04500971C99 /* PaymentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45509B0B1AA3D04500971C99 /* PaymentsViewController.m */; };
 		45B652C71AA27ACE00C94292 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B652C61AA27ACE00C94292 /* MapKit.framework */; };
 		45B652CA1AA28A7000C94292 /* DestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B652C91AA28A7000C94292 /* DestinationViewController.m */; };
 		45F0F6311AA19D3E00073DF9 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0F6301AA19D3E00073DF9 /* ThirdViewController.m */; };
@@ -67,6 +68,8 @@
 		45509B041AA39A1400971C99 /* lite-pass-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lite-pass-1.png"; sourceTree = "<group>"; };
 		45509B061AA3C57500971C99 /* esther.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = esther.png; sourceTree = "<group>"; };
 		45509B081AA3C57E00971C99 /* richard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = richard.png; sourceTree = "<group>"; };
+		45509B0A1AA3D04500971C99 /* PaymentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PaymentsViewController.h; sourceTree = "<group>"; };
+		45509B0B1AA3D04500971C99 /* PaymentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PaymentsViewController.m; sourceTree = "<group>"; };
 		45B652C61AA27ACE00C94292 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		45B652C81AA28A7000C94292 /* DestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationViewController.h; sourceTree = "<group>"; };
 		45B652C91AA28A7000C94292 /* DestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationViewController.m; sourceTree = "<group>"; };
@@ -87,7 +90,7 @@
 		CAA3EEA91AA29CE400BC3534 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		CAA3EEAD1AA29D6000BC3534 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
 		CAA3EEAE1AA29D6000BC3534 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
-		CAB4E22B1AA1968B00E10C55 /* sameDayDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sameDayDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAB4E22B1AA1968B00E10C55 /* sameDayDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = sameDayDelivery.app; path = LitePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB4E22F1AA1968B00E10C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAB4E2301AA1968B00E10C55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		CAB4E2321AA1968B00E10C55 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -263,6 +266,8 @@
 				CAB4E2391AA1968B00E10C55 /* SecondViewController.m */,
 				45F0F62F1AA19D3E00073DF9 /* ThirdViewController.h */,
 				45F0F6301AA19D3E00073DF9 /* ThirdViewController.m */,
+				45509B0A1AA3D04500971C99 /* PaymentsViewController.h */,
+				45509B0B1AA3D04500971C99 /* PaymentsViewController.m */,
 				CAB4E23B1AA1968B00E10C55 /* Main.storyboard */,
 				CAB4E23E1AA1968C00E10C55 /* Images.xcassets */,
 				CAB4E2401AA1968C00E10C55 /* LaunchScreen.xib */,
@@ -433,6 +438,7 @@
 				CAB4E2311AA1968B00E10C55 /* main.m in Sources */,
 				45F0F6371AA1B9CC00073DF9 /* ProductViewController.m in Sources */,
 				45B652CA1AA28A7000C94292 /* DestinationViewController.m in Sources */,
+				45509B0C1AA3D04500971C99 /* PaymentsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

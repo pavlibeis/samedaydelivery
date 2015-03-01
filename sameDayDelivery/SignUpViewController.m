@@ -47,7 +47,7 @@
                                              } else {
                                                  UIViewController * vc2 = [self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
                                                 
-                                                     [self presentViewController:vc2 animated:YES completion:nil];
+                                                     [self.navigationController pushViewController:vc2 animated:YES];
                                              }
                                              
                                          } else {
