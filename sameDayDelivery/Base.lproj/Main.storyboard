@@ -277,7 +277,7 @@
                                     <action selector="checkButton:" destination="n3M-9d-Rks" eventType="touchUpInside" id="nos-Bg-twR"/>
                                 </connections>
                             </button>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="83s-HG-gH8">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="83s-HG-gH8">
                                 <rect key="frame" x="0.0" y="106" width="600" height="404"/>
                             </mapView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ucl-zU-8wj">
@@ -290,7 +290,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fl-Sa-uzb">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0fl-Sa-uzb">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="106"/>
                                 <color key="backgroundColor" red="0.85490196080000003" green="0.90980392160000001" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -302,6 +302,14 @@
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="0fl-Sa-uzb" firstAttribute="leading" secondItem="O95-Ag-lXQ" secondAttribute="leading" id="3jV-HP-McQ"/>
+                            <constraint firstAttribute="trailing" secondItem="83s-HG-gH8" secondAttribute="trailing" id="C7r-py-TgQ"/>
+                            <constraint firstAttribute="trailing" secondItem="Ucl-zU-8wj" secondAttribute="trailing" id="IEU-52-70w"/>
+                            <constraint firstItem="83s-HG-gH8" firstAttribute="leading" secondItem="O95-Ag-lXQ" secondAttribute="leading" id="LDA-a2-G0d"/>
+                            <constraint firstAttribute="trailing" secondItem="0fl-Sa-uzb" secondAttribute="trailing" id="bSF-dD-4xf"/>
+                            <constraint firstItem="Ucl-zU-8wj" firstAttribute="leading" secondItem="O95-Ag-lXQ" secondAttribute="leading" id="jzX-S5-8yX"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Item" id="2tC-sT-KIS"/>
                     <connections>
@@ -324,9 +332,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsG-1F-uZB">
-                                <rect key="frame" x="245" y="175" width="46" height="30"/>
-                                <state key="normal" title="Button">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="You have a request for storage Lite Pass" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMT-GG-ckM">
+                                <rect key="frame" x="93" y="118" width="415" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="0.29550039613414303" green="0.40334173390474271" blue="0.0938933379726411" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bsG-1F-uZB">
+                                <rect key="frame" x="284" y="187" width="30" height="30"/>
+                                <state key="normal" title="OK">
+                                    <color key="titleColor" red="0.29550039610000001" green="0.4033417339" blue="0.093893337970000004" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -334,7 +349,11 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.85490196078431369" green="0.90980392156862744" blue="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="nMT-GG-ckM" secondAttribute="centerX" id="fEP-XO-k0Y"/>
+                            <constraint firstAttribute="centerX" secondItem="bsG-1F-uZB" secondAttribute="centerX" id="qSr-ji-ZRi"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mK7-Rg-Xm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
