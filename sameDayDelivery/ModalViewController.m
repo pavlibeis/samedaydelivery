@@ -7,7 +7,7 @@
 //
 
 #import "ModalViewController.h"
-
+#import <Parse/Parse.h>
 @interface ModalViewController ()
 
 @end
@@ -16,6 +16,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    PFPush *push = [[PFPush alloc] init];
+    [push setChannel:@"DelivererLocation"];
+    [push setMessage:@"On My Way!"];
+    [push sendPushInBackground];
     self.modalPresentationStyle = UIModalPresentationCurrentContext;
 }
 
