@@ -11,7 +11,7 @@
             <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pxD-9D-MwW">
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="lite-pass-1.png" translatesAutoresizingMaskIntoConstraints="NO" id="pxD-9D-MwW">
                     <rect key="frame" x="188" y="182" width="104" height="116"/>
                 </imageView>
             </subviews>
@@ -25,4 +25,7 @@
             <point key="canvasLocation" x="548" y="455"/>
         </view>
     </objects>
+    <resources>
+        <image name="lite-pass-1.png" width="208" height="231"/>
+    </resources>
 </document>

@@ -18,4 +18,10 @@
 @property (nonatomic, strong) IBOutlet UIView *addressContainerView;
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
 
+@property (nonatomic, strong) IBOutlet UIButton *gmsButton;
+@property (nonatomic, strong) IBOutlet UIButton *bmsButton;
+@property (nonatomic, strong) IBOutlet UIButton *getLiteButton;
+@property (nonatomic, strong) IBOutlet UITextField *addressTExtField;
+@property (nonatomic, strong) IBOutlet UILabel *onTheWayLabel;
+
 @end

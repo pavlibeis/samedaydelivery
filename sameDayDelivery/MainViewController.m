@@ -15,7 +15,33 @@
 
 @implementation MainViewController
 
-@synthesize addressContainerView, mapView;
+@synthesize addressContainerView, mapView, gmsButton,bmsButton, addressTExtField, onTheWayLabel, getLiteButton;
+
+- (IBAction)getLite:(id)sender {
+    
+    onTheWayLabel.hidden = NO;
+    getLiteButton.hidden = YES;
+    
+}
+
+- (IBAction)getMyStuff:(id)sender {
+    
+    gmsButton.hidden = YES;
+    bmsButton.hidden = YES;
+    addressTExtField.hidden = NO;
+    getLiteButton.enabled = YES;
+    
+}
+
+- (IBAction)bringMyStuff:(id)sender {
+    
+    gmsButton.hidden = YES;
+    bmsButton.hidden = YES;
+    addressTExtField.hidden = NO;
+    getLiteButton.enabled = YES;
+    
+    
+}
 
 - (IBAction)next:(id)sender {
     
