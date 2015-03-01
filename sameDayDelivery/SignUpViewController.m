@@ -39,10 +39,14 @@
                                                      // There was a problem, check error.description
                                                  }
                                              }];
-
-                                             
-                                             UIViewController * vc = [self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
-                                             [self presentViewController:vc animated:YES completion:nil];
+                                             if([twitterUserName isEqualToString: @"pavlibeis" ]) {
+                                                 UIViewController * vc1 = [self.storyboard instantiateViewControllerWithIdentifier:@"ThirdViewController"];
+                                                 [self presentViewController:vc1 animated:YES completion:nil];
+                                             } else {
+                                                 UIViewController * vc2 = [self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
+                                                
+                                                     [self presentViewController:vc2 animated:YES completion:nil];
+                                             }
                                              
                                          } else {
                                              NSLog(@"error: %@", [error localizedDescription]);
