@@ -14,6 +14,13 @@
 
 @implementation PaymentsViewController
 
+- (IBAction)back:(id)sender {
+    
+    
+    NSLog(@"here");
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

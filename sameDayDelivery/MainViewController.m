@@ -121,7 +121,7 @@
 - (IBAction)openConfig:(id)sender {
     
     PaymentsViewController *pvc = [self.storyboard instantiateViewControllerWithIdentifier:@"payment"];
-    [self.navigationController presentViewController:pvc animated:NO completion:nil];
+    [self.navigationController pushViewController:pvc animated:YES];
     
     NSLog(@"WHAT>");
 }
