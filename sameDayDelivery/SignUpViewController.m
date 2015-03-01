@@ -8,6 +8,7 @@
 
 #import "SignUpViewController.h"
 #import <TwitterKit/TwitterKit.h>
+#import <Parse/Parse.h>
 
 @interface SignUpViewController ()
 
@@ -27,6 +28,18 @@
                                              NSString *twitterUserName = [session userName];
                                              [[NSUserDefaults standardUserDefaults] setObject:twitterUserName forKey:@"lgName"];
                                              [[NSUserDefaults standardUserDefaults] synchronize];
+                                             
+                                             PFObject *deliverer = [PFObject objectWithClassName:@"Delivers"];
+                                             deliverer[@"userName"] = twitterUserName;
+                                             
+                                             [deliverer saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                                                 if (succeeded) {
+                                                     // The object has been saved.
+                                                 } else {
+                                                     // There was a problem, check error.description
+                                                 }
+                                             }];
+
                                              
                                          } else {
                                              NSLog(@"error: %@", [error localizedDescription]);
