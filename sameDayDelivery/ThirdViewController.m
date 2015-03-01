@@ -22,11 +22,13 @@
     NSDictionary *receivedNotification = [[NSDictionary alloc] init];
     
     [[NSNotificationCenter defaultCenter]
-     addObserver:self selector:@selector(triggerAction:) name:@"kDriverNotifRecieved" object:receivedNotification];
+     addObserver:self selector:@selector(triggerAction:) name:@"kDriverNotifRecieved" object:nil];
     
+    /*
     for (NSString *key in [receivedNotification allKeys]) {
         NSLog(@"KEY:%@",key);
     }
+     */
     
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
