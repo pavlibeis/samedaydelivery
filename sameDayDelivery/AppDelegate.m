@@ -73,6 +73,7 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
     if ([[[userInfo objectForKey:@"aps"] objectForKey:@"alert"] isEqualToString:@"Your Pickup is Waiting for you!"]) {
         [[NSNotificationCenter defaultCenter] postNotificationName:@"kDriverNotifRecieved" object:userInfo];
     } else {
+        NSLog(@"LOCO");
         [[NSNotificationCenter defaultCenter] postNotificationName:@"kCustomerNotifRecieved" object:userInfo];
     }
     

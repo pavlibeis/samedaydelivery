@@ -10,6 +10,8 @@
 		4518EC4A1AA31C4000F245B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4518EC491AA31C4000F245B6 /* UIKit.framework */; };
 		4518EC4C1AA31C4B00F245B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4518EC4B1AA31C4B00F245B6 /* Foundation.framework */; };
 		45509B051AA39A1400971C99 /* lite-pass-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 45509B041AA39A1400971C99 /* lite-pass-1.png */; };
+		45509B071AA3C57500971C99 /* esther.png in Resources */ = {isa = PBXBuildFile; fileRef = 45509B061AA3C57500971C99 /* esther.png */; };
+		45509B091AA3C57E00971C99 /* richard.png in Resources */ = {isa = PBXBuildFile; fileRef = 45509B081AA3C57E00971C99 /* richard.png */; };
 		45B652C71AA27ACE00C94292 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B652C61AA27ACE00C94292 /* MapKit.framework */; };
 		45B652CA1AA28A7000C94292 /* DestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B652C91AA28A7000C94292 /* DestinationViewController.m */; };
 		45F0F6311AA19D3E00073DF9 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0F6301AA19D3E00073DF9 /* ThirdViewController.m */; };
@@ -63,6 +65,8 @@
 		4518EC491AA31C4000F245B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4518EC4B1AA31C4B00F245B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		45509B041AA39A1400971C99 /* lite-pass-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lite-pass-1.png"; sourceTree = "<group>"; };
+		45509B061AA3C57500971C99 /* esther.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = esther.png; sourceTree = "<group>"; };
+		45509B081AA3C57E00971C99 /* richard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = richard.png; sourceTree = "<group>"; };
 		45B652C61AA27ACE00C94292 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		45B652C81AA28A7000C94292 /* DestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationViewController.h; sourceTree = "<group>"; };
 		45B652C91AA28A7000C94292 /* DestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationViewController.m; sourceTree = "<group>"; };
@@ -168,6 +172,8 @@
 		45509B031AA39A0A00971C99 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				45509B081AA3C57E00971C99 /* richard.png */,
+				45509B061AA3C57500971C99 /* esther.png */,
 				45509B041AA39A1400971C99 /* lite-pass-1.png */,
 			);
 			name = images;
@@ -375,10 +381,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				45509B091AA3C57E00971C99 /* richard.png in Resources */,
 				CAA3EEAB1AA29CE400BC3534 /* TwitterKitResources.bundle in Resources */,
 				45509B051AA39A1400971C99 /* lite-pass-1.png in Resources */,
 				CAB4E23D1AA1968B00E10C55 /* Main.storyboard in Resources */,
 				CAB4E2421AA1968C00E10C55 /* LaunchScreen.xib in Resources */,
+				45509B071AA3C57500971C99 /* esther.png in Resources */,
 				CAB4E23F1AA1968C00E10C55 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

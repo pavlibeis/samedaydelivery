@@ -27,6 +27,8 @@
     bmsButton.hidden = NO;
     addressTExtField.hidden = YES;
     getLiteButton.enabled = NO;
+    getLiteButton.hidden = NO;
+    onTheWayLabel.hidden = YES;
     
 }
 
@@ -120,6 +122,7 @@
 #pragma mark - Notification
 -(void) triggerAction:(NSNotification *) notification
 {
+    NSLog(@"WHOOOOHOOO");
     [self back];
 }
 

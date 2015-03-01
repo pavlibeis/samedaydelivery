@@ -300,6 +300,9 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="richard.png" translatesAutoresizingMaskIntoConstraints="NO" id="MXe-g3-tEV">
+                                <rect key="frame" x="10" y="10" width="50" height="50"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -481,10 +484,14 @@
                                 <color key="textColor" white="0.33333333333333331" alpha="0.88" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="esther.png" translatesAutoresizingMaskIntoConstraints="NO" id="CCp-4V-ZQc">
+                                <rect key="frame" x="23" y="13" width="50" height="50"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="8qe-dv-fbf" firstAttribute="top" secondItem="twy-18-brn" secondAttribute="top" id="0bA-WL-CS3"/>
+                            <constraint firstItem="CCp-4V-ZQc" firstAttribute="top" secondItem="twy-18-brn" secondAttribute="top" constant="15" id="0yG-wc-2rR"/>
                             <constraint firstItem="5Kt-8m-0Ja" firstAttribute="baseline" secondItem="fBN-mD-9xd" secondAttribute="firstBaseline" id="2QP-jy-5nf"/>
                             <constraint firstItem="fBN-mD-9xd" firstAttribute="centerY" secondItem="ZvC-fO-Ylw" secondAttribute="centerY" id="583-YX-m3j"/>
                             <constraint firstItem="5Kt-8m-0Ja" firstAttribute="top" secondItem="fBN-mD-9xd" secondAttribute="top" id="5BR-EY-FcK"/>
@@ -504,6 +511,7 @@
                             <constraint firstItem="Pp4-kf-M7f" firstAttribute="trailing" secondItem="R2b-hk-GiH" secondAttribute="trailing" id="fLV-m5-eiL"/>
                             <constraint firstItem="8qe-dv-fbf" firstAttribute="trailing" secondItem="R2b-hk-GiH" secondAttribute="trailing" id="hPF-bd-HZp"/>
                             <constraint firstItem="ZvC-fO-Ylw" firstAttribute="bottom" secondItem="R2b-hk-GiH" secondAttribute="bottom" id="inz-yf-9Zx"/>
+                            <constraint firstItem="CCp-4V-ZQc" firstAttribute="leading" secondItem="twy-18-brn" secondAttribute="leading" constant="15" id="joe-kG-SbD"/>
                             <constraint firstItem="X5v-t8-z5D" firstAttribute="baseline" secondItem="fBN-mD-9xd" secondAttribute="baseline" constant="-4" id="kCr-CS-MdP"/>
                             <constraint firstItem="Pp4-kf-M7f" firstAttribute="bottom" secondItem="jj5-YW-MGp" secondAttribute="top" id="lmc-dd-cR4"/>
                             <constraint firstItem="R2b-hk-GiH" firstAttribute="top" secondItem="8qe-dv-fbf" secondAttribute="bottom" id="sWo-F7-yUL"/>
@@ -587,7 +595,9 @@
         </scene>
     </scenes>
     <resources>
+        <image name="esther.png" width="101" height="100"/>
         <image name="first" width="30" height="30"/>
+        <image name="richard.png" width="101" height="100"/>
         <image name="second" width="30" height="30"/>
     </resources>
 </document>
