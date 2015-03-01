@@ -14,6 +14,10 @@
 		45F0F6371AA1B9CC00073DF9 /* ProductViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0F6361AA1B9CC00073DF9 /* ProductViewController.m */; };
 		45F0F63A1AA2542100073DF9 /* PayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0F6391AA2542100073DF9 /* PayViewController.m */; };
 		45F0F63D1AA2709500073DF9 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0F63C1AA2709500073DF9 /* MainViewController.m */; };
+		CAA3EEAA1AA29CE400BC3534 /* TwitterKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA3EEA71AA29CE400BC3534 /* TwitterKit.framework */; };
+		CAA3EEAB1AA29CE400BC3534 /* TwitterKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CAA3EEA81AA29CE400BC3534 /* TwitterKitResources.bundle */; };
+		CAA3EEAC1AA29CE400BC3534 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CAA3EEA91AA29CE400BC3534 /* Fabric.framework */; };
+		CAA3EEAF1AA29D6000BC3534 /* SignUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAA3EEAE1AA29D6000BC3534 /* SignUpViewController.m */; };
 		CAB4E2311AA1968B00E10C55 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB4E2301AA1968B00E10C55 /* main.m */; };
 		CAB4E2341AA1968B00E10C55 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB4E2331AA1968B00E10C55 /* AppDelegate.m */; };
 		CAB4E2371AA1968B00E10C55 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CAB4E2361AA1968B00E10C55 /* FirstViewController.m */; };
@@ -65,6 +69,11 @@
 		45F0F6391AA2542100073DF9 /* PayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PayViewController.m; sourceTree = "<group>"; };
 		45F0F63B1AA2709500073DF9 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		45F0F63C1AA2709500073DF9 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		CAA3EEA71AA29CE400BC3534 /* TwitterKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterKit.framework; sourceTree = "<group>"; };
+		CAA3EEA81AA29CE400BC3534 /* TwitterKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = TwitterKitResources.bundle; path = TwitterKit.framework/Versions/A/Resources/TwitterKitResources.bundle; sourceTree = "<group>"; };
+		CAA3EEA91AA29CE400BC3534 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		CAA3EEAD1AA29D6000BC3534 /* SignUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignUpViewController.h; sourceTree = "<group>"; };
+		CAA3EEAE1AA29D6000BC3534 /* SignUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignUpViewController.m; sourceTree = "<group>"; };
 		CAB4E22B1AA1968B00E10C55 /* sameDayDelivery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = sameDayDelivery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAB4E22F1AA1968B00E10C55 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAB4E2301AA1968B00E10C55 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -108,6 +117,7 @@
 				45B652C71AA27ACE00C94292 /* MapKit.framework in Frameworks */,
 				CAB4E2761AA1A21E00E10C55 /* libsqlite3.dylib in Frameworks */,
 				CAB4E2741AA1A21200E10C55 /* libz.dylib in Frameworks */,
+				CAA3EEAC1AA29CE400BC3534 /* Fabric.framework in Frameworks */,
 				CAB4E2721AA1A20D00E10C55 /* SystemConfiguration.framework in Frameworks */,
 				CAB4E2701AA1A20600E10C55 /* StoreKit.framework in Frameworks */,
 				CAB4E26E1AA1A1FF00E10C55 /* Security.framework in Frameworks */,
@@ -122,6 +132,7 @@
 				CAB4E2601AA1A15B00E10C55 /* ParseUI.framework in Frameworks */,
 				CAB4E25F1AA1A15B00E10C55 /* ParseFacebookUtils.framework in Frameworks */,
 				CAB4E25C1AA1A15B00E10C55 /* Bolts.framework in Frameworks */,
+				CAA3EEAA1AA29CE400BC3534 /* TwitterKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +164,9 @@
 		CAB4E2221AA1968B00E10C55 = {
 			isa = PBXGroup;
 			children = (
+				CAA3EEA71AA29CE400BC3534 /* TwitterKit.framework */,
+				CAA3EEA81AA29CE400BC3534 /* TwitterKitResources.bundle */,
+				CAA3EEA91AA29CE400BC3534 /* Fabric.framework */,
 				45B652C61AA27ACE00C94292 /* MapKit.framework */,
 				CAB4E2751AA1A21E00E10C55 /* libsqlite3.dylib */,
 				CAB4E2731AA1A21200E10C55 /* libz.dylib */,
@@ -190,6 +204,8 @@
 			children = (
 				CAB4E2321AA1968B00E10C55 /* AppDelegate.h */,
 				CAB4E2331AA1968B00E10C55 /* AppDelegate.m */,
+				CAA3EEAD1AA29D6000BC3534 /* SignUpViewController.h */,
+				CAA3EEAE1AA29D6000BC3534 /* SignUpViewController.m */,
 				CAB4E2771AA1B2A300E10C55 /* ModalViewController.h */,
 				CAB4E2781AA1B2A300E10C55 /* ModalViewController.m */,
 				45F0F63B1AA2709500073DF9 /* MainViewController.h */,
@@ -245,6 +261,7 @@
 				CAB4E2271AA1968B00E10C55 /* Sources */,
 				CAB4E2281AA1968B00E10C55 /* Frameworks */,
 				CAB4E2291AA1968B00E10C55 /* Resources */,
+				CAA3EEA61AA29C5000BC3534 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -284,11 +301,11 @@
 				TargetAttributes = {
 					CAB4E22A1AA1968B00E10C55 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = ZRG2J3VTE5;
+						DevelopmentTeam = Q338UYGFZ8;
 					};
 					CAB4E2461AA1968C00E10C55 = {
 						CreatedOnToolsVersion = 6.1.1;
-						DevelopmentTeam = ZRG2J3VTE5;
+						DevelopmentTeam = 894JHBB748;
 						TestTargetID = CAB4E22A1AA1968B00E10C55;
 					};
 				};
@@ -317,6 +334,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CAA3EEAB1AA29CE400BC3534 /* TwitterKitResources.bundle in Resources */,
 				CAB4E23D1AA1968B00E10C55 /* Main.storyboard in Resources */,
 				CAB4E2421AA1968C00E10C55 /* LaunchScreen.xib in Resources */,
 				CAB4E23F1AA1968C00E10C55 /* Images.xcassets in Resources */,
@@ -332,6 +350,22 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CAA3EEA61AA29C5000BC3534 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run 726c84c31a41adff3b04066d07426f8a2971e9c6 819b67c833ab41442b91d755a3d9a7237d561a0fdba63abe178535143c93de6e";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		CAB4E2271AA1968B00E10C55 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -339,6 +373,7 @@
 			files = (
 				CAB4E23A1AA1968B00E10C55 /* SecondViewController.m in Sources */,
 				45F0F63A1AA2542100073DF9 /* PayViewController.m in Sources */,
+				CAA3EEAF1AA29D6000BC3534 /* SignUpViewController.m in Sources */,
 				45F0F6311AA19D3E00073DF9 /* ThirdViewController.m in Sources */,
 				45F0F63D1AA2709500073DF9 /* MainViewController.m in Sources */,
 				CAB4E27A1AA1B2A300E10C55 /* ModalViewController.m in Sources */,
@@ -486,8 +521,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

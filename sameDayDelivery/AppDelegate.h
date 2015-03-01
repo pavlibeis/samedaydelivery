@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ModalViewController.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    NSString *lgName;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 

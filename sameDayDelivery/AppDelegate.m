@@ -9,11 +9,17 @@
 #import "AppDelegate.h"
 #import <Parse/Parse.h>
 #import "FirstViewController.h"
+#import <Fabric/Fabric.h>
+#import <TwitterKit/TwitterKit.h>
+#import <CoreLocation/CoreLocation.h>
 @interface AppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation AppDelegate{
+    CLLocationManager *locationManager;
+
+}
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
@@ -34,13 +40,18 @@
     [application registerForRemoteNotifications];
     // When users indicate they are Giants fans, we subscribe them to that channel.
     PFInstallation *currentInstallation = [PFInstallation currentInstallation];
-    [currentInstallation addUniqueObject:@"Giants" forKey:@"channels"];
+    [currentInstallation addUniqueObject:@"DelivererLocation" forKey:@"channels"];
     [currentInstallation saveInBackground];
-
-//    self.window.rootViewController = aModalViewController;
-//    [self presentModalViewController:aModalViewController animated:YES];
-
-
+    
+    locationManager = [[CLLocationManager alloc] init];
+    locationManager.delegate = self;
+    [locationManager requestWhenInUseAuthorization];
+    
+    locationManager.desiredAccuracy = kCLLocationAccuracyThreeKilometers;
+    [locationManager startUpdatingLocation];
+    [Fabric with:@[TwitterKit]];
+    
+    lgName=@"";
 
     return YES;
 }
@@ -54,11 +65,89 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 }
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
-//    [PFPush handlePush:userInfo];
+    NSLog(@"Just receive a notification");
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"kDriverNotifRecieved" object:userInfo];
     
 
+}
+
+- (void)locationManager:(CLLocationManager *)manager didFailWithError:(NSError *)error
+{
+    NSLog(@"didFailWithError: %@", error);
+    UIAlertView *errorAlert = [[UIAlertView alloc]
+                               initWithTitle:@"Error" message:@"Failed to Get Your Location" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+    [errorAlert show];
+}
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateToLocation:(CLLocation *)newLocation fromLocation:(CLLocation *)oldLocation
+{
+//    NSLog(@"didUpdateToLocation: %@", newLocation);
+ 
+    lgName = [[NSUserDefaults standardUserDefaults]
+                            stringForKey:@"lgName"];
+    
+    if (!lgName) {
+        lgName = @"";
+    }
+        
+//        PFQuery *userQuery = [PFUser query];
+//        
+//        PFQuery *locationQuery = [PFQuery queryWithClassName:@"Delivers"];
+//        [locationQuery whereKey:@"userName" equalTo:lgName];
+//        
+//
+//        [userQuery findObjectsInBackgroundWithBlock:^(NSArray *users, NSError *error) {
+//            for (PFObject *user in users) {
+//                PFObject *location = user[@"Delivers"];
+//                NSLog(@"location %@",location);
+//                // read user/car properties as needed
+//            }
+//        }];
+        
+        PFQuery *query = [PFQuery queryWithClassName:@"Delivers"];
+        [query whereKey:@"userName" equalTo:lgName];
+        [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+           
+            if ([objects count]<1) {
+                
+                NSLog(@"longitude %f",  newLocation.coordinate.longitude);
+                NSLog(@"latitude %f",  newLocation.coordinate.latitude);
+                PFObject *deliverer = [PFObject objectWithClassName:@"Delivers"];
+                deliverer[@"locationNow"] = [PFGeoPoint geoPointWithLocation:newLocation];
+                deliverer[@"userName"] = lgName;
+                
+                [deliverer saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                    if (succeeded) {
+                        // The object has been saved.
+                    } else {
+                        // There was a problem, check error.description
+                    }
+                }];
+
+            } else {
+                
+                
+                PFObject *object = [objects objectAtIndex:0];
+                object[@"locationNow"] = [PFGeoPoint geoPointWithLocation:newLocation];
+                [object saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                    if (succeeded) {
+                        // The object has been saved.
+                    } else {
+                        // There was a problem, check error.description
+                    }
+                }];
+            }
+            
+            
+            
+        }];
+    
+
+        
+        
 
 }
+
 
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
