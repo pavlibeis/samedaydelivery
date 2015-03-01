@@ -41,6 +41,9 @@
                                              }];
 
                                              
+                                             UIViewController * vc = [self.storyboard instantiateViewControllerWithIdentifier:@"MainViewController"];
+                                             [self presentViewController:vc animated:YES completion:nil];
+                                             
                                          } else {
                                              NSLog(@"error: %@", [error localizedDescription]);
                                          }
