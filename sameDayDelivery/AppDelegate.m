@@ -65,6 +65,10 @@ didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
 
 - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo {
     NSLog(@"Just receive a notification");
+    
+    for (NSString *key in [userInfo allKeys]) {
+        NSLog(@"KEYS:%@",key);
+    }
     [[NSNotificationCenter defaultCenter] postNotificationName:@"kDriverNotifRecieved" object:userInfo];
     
 
