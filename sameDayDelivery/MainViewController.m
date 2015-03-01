@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "DestinationViewController.h"
 
 @interface MainViewController ()
 
@@ -15,6 +16,13 @@
 @implementation MainViewController
 
 @synthesize addressContainerView, mapView;
+
+- (IBAction)next:(id)sender {
+    
+    DestinationViewController *dvc = [self.storyboard instantiateViewControllerWithIdentifier:@"destination"];
+    [self.navigationController pushViewController:dvc animated:YES];
+
+}
 
 - (IBAction)select:(id)sender {
     

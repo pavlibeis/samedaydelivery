@@ -81,7 +81,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2292" y="-1855"/>
+            <point key="canvasLocation" x="952" y="-1967"/>
         </scene>
         <!--Product View Controller-->
         <scene sceneID="arQ-xF-1yn">
@@ -149,12 +149,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1M-dZ-hmm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2292" y="-1109"/>
+            <point key="canvasLocation" x="1676" y="-1967"/>
         </scene>
-        <!--View Controller-->
+        <!--Destination View Controller-->
         <scene sceneID="rsD-Zs-Vsu">
             <objects>
-                <viewController id="65d-RO-70u" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="destination" id="65d-RO-70u" customClass="DestinationViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ps8-N1-qUB"/>
                         <viewControllerLayoutGuide type="bottom" id="miN-7y-nkc"/>
@@ -162,7 +162,45 @@
                     <view key="view" contentMode="scaleToFill" id="a5P-11-neQ">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3xA-rf-Wp3">
+                                <rect key="frame" x="200" y="260" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3ym-iC-Cai">
+                                <rect key="frame" x="200" y="298" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Street Number" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fwF-nA-ced">
+                                <rect key="frame" x="200" y="146" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Apt # / Suite #" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XJ3-DO-cMi">
+                                <rect key="frame" x="200" y="184" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bdO-LO-bGv">
+                                <rect key="frame" x="200" y="222" width="200" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3xA-rf-Wp3" firstAttribute="centerX" secondItem="XJ3-DO-cMi" secondAttribute="centerX" id="96z-2y-U8z"/>
+                            <constraint firstAttribute="centerX" secondItem="XJ3-DO-cMi" secondAttribute="centerX" id="Aab-rk-Tg4"/>
+                            <constraint firstItem="3xA-rf-Wp3" firstAttribute="centerX" secondItem="fwF-nA-ced" secondAttribute="centerX" id="EAG-0e-d30"/>
+                            <constraint firstItem="3xA-rf-Wp3" firstAttribute="centerX" secondItem="3ym-iC-Cai" secondAttribute="centerX" id="G4A-IA-Mai"/>
+                            <constraint firstAttribute="centerX" secondItem="bdO-LO-bGv" secondAttribute="centerX" id="IXa-sv-guQ"/>
+                            <constraint firstAttribute="centerX" secondItem="fwF-nA-ced" secondAttribute="centerX" id="IbH-36-kzx"/>
+                            <constraint firstItem="3xA-rf-Wp3" firstAttribute="centerX" secondItem="bdO-LO-bGv" secondAttribute="centerX" id="RDZ-t4-WeW"/>
+                            <constraint firstAttribute="centerX" secondItem="3ym-iC-Cai" secondAttribute="centerX" id="Y9G-hZ-xWD"/>
+                            <constraint firstAttribute="centerX" secondItem="3xA-rf-Wp3" secondAttribute="centerX" id="n0W-2N-f5e"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xqu-xS-dTI" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -213,7 +251,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wbe-IJ-hSO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2292" y="-405"/>
+            <point key="canvasLocation" x="2372" y="-1967"/>
         </scene>
         <!--Item-->
         <scene sceneID="DUF-Hy-DZP">
@@ -369,6 +407,9 @@
                                 <state key="normal" title="Next">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="next:" destination="KDl-Y8-T2x" eventType="touchUpInside" id="hQM-2s-dFY"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -447,9 +488,9 @@
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
+                        <segue destination="KDl-Y8-T2x" kind="relationship" relationship="viewControllers" id="Ykn-hg-ihv"/>
                         <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
                         <segue destination="n3M-9d-Rks" kind="relationship" relationship="viewControllers" id="pdf-v1-STZ"/>
-                        <segue destination="KDl-Y8-T2x" kind="relationship" relationship="viewControllers" id="Ykn-hg-ihv"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
