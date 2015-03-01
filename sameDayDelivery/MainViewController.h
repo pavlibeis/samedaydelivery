@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import <Parse/Parse.h>
 #import <MapKit/MapKit.h>
 
 @interface MainViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate> {

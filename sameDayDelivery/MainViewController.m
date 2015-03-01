@@ -21,7 +21,10 @@
     
     onTheWayLabel.hidden = NO;
     getLiteButton.hidden = YES;
-    
+    PFPush *push = [[PFPush alloc] init];
+    [push setChannel:@"DelivererLocation"];
+    [push setMessage:@"Your Pickup is Waiting for you!"];
+    [push sendPushInBackground];
 }
 
 - (IBAction)getMyStuff:(id)sender {
@@ -30,6 +33,7 @@
     bmsButton.hidden = YES;
     addressTExtField.hidden = NO;
     getLiteButton.enabled = YES;
+    [getLiteButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
 }
 
@@ -39,6 +43,7 @@
     bmsButton.hidden = YES;
     addressTExtField.hidden = NO;
     getLiteButton.enabled = YES;
+    [getLiteButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     
     
 }
@@ -64,6 +69,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    // When users indicate they are Giants fans, we subscribe them to that channel.
+    PFInstallation *currentInstallation = [PFInstallation currentInstallation];
+    [currentInstallation addUniqueObject:@"DelivererLocation" forKey:@"channels"];
+    [currentInstallation saveInBackground];
     
     addressContainerView.hidden = YES;
     
