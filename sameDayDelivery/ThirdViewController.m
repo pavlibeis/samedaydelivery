@@ -18,8 +18,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    NSDictionary *receivedNotification = [[NSDictionary alloc] init];
+    
     [[NSNotificationCenter defaultCenter]
-     addObserver:self selector:@selector(triggerAction:) name:@"kDriverNotifRecieved" object:nil];
+     addObserver:self selector:@selector(triggerAction:) name:@"kDriverNotifRecieved" object:receivedNotification];
+    
+    for (NSString *key in [receivedNotification allKeys]) {
+        NSLog(@"KEY:%@",key);
+    }
     
     locationManager = [[CLLocationManager alloc] init];
     locationManager.delegate = self;
