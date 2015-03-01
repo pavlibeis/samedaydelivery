@@ -18,6 +18,11 @@
 @synthesize addressContainerView, mapView, gmsButton,bmsButton, addressTExtField, onTheWayLabel, getLiteButton;
 @synthesize upLabel,bottonLabel;
 
+- (IBAction)call:(id)sender {
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"tel:19545536227"]];
+}
+
 - (IBAction)back:(id)sender {
     [self back];
 }
