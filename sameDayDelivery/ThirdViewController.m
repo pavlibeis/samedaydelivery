@@ -26,6 +26,8 @@
     // Dispose of any resources that can be recreated.
 }
 - (IBAction)checkButton:(id)sender {
+    
+    
     //    ModalViewController *aModalViewController = [[ModalViewController alloc] init];
     ModalViewController *aModalViewController = [self.storyboard instantiateViewControllerWithIdentifier:@"modal"];
     
