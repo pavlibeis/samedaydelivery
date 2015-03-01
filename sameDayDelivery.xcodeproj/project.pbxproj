@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		4518EC4A1AA31C4000F245B6 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4518EC491AA31C4000F245B6 /* UIKit.framework */; };
 		4518EC4C1AA31C4B00F245B6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4518EC4B1AA31C4B00F245B6 /* Foundation.framework */; };
+		45509B051AA39A1400971C99 /* lite-pass-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 45509B041AA39A1400971C99 /* lite-pass-1.png */; };
 		45B652C71AA27ACE00C94292 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45B652C61AA27ACE00C94292 /* MapKit.framework */; };
 		45B652CA1AA28A7000C94292 /* DestinationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45B652C91AA28A7000C94292 /* DestinationViewController.m */; };
 		45F0F6311AA19D3E00073DF9 /* ThirdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 45F0F6301AA19D3E00073DF9 /* ThirdViewController.m */; };
@@ -61,6 +62,7 @@
 		0333F20EA553A560105B1112 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4518EC491AA31C4000F245B6 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4518EC4B1AA31C4B00F245B6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		45509B041AA39A1400971C99 /* lite-pass-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "lite-pass-1.png"; sourceTree = "<group>"; };
 		45B652C61AA27ACE00C94292 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		45B652C81AA28A7000C94292 /* DestinationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DestinationViewController.h; sourceTree = "<group>"; };
 		45B652C91AA28A7000C94292 /* DestinationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DestinationViewController.m; sourceTree = "<group>"; };
@@ -163,6 +165,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		45509B031AA39A0A00971C99 /* images */ = {
+			isa = PBXGroup;
+			children = (
+				45509B041AA39A1400971C99 /* lite-pass-1.png */,
+			);
+			name = images;
+			sourceTree = "<group>";
+		};
 		45F0F63E1AA270D400073DF9 /* Old Stuff */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +242,7 @@
 		CAB4E22D1AA1968B00E10C55 /* sameDayDelivery */ = {
 			isa = PBXGroup;
 			children = (
+				45509B031AA39A0A00971C99 /* images */,
 				CAB4E2321AA1968B00E10C55 /* AppDelegate.h */,
 				CAB4E2331AA1968B00E10C55 /* AppDelegate.m */,
 				CAA3EEAD1AA29D6000BC3534 /* SignUpViewController.h */,
@@ -365,6 +376,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAA3EEAB1AA29CE400BC3534 /* TwitterKitResources.bundle in Resources */,
+				45509B051AA39A1400971C99 /* lite-pass-1.png in Resources */,
 				CAB4E23D1AA1968B00E10C55 /* Main.storyboard in Resources */,
 				CAB4E2421AA1968C00E10C55 /* LaunchScreen.xib in Resources */,
 				CAB4E23F1AA1968C00E10C55 /* Images.xcassets in Resources */,
